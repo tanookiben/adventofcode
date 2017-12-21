@@ -1,5 +1,8 @@
 def move(map, x, y, dir)
   curr = map[y][x]
+
+  # Please don't judge me
+  
   case curr
   when '|'
     case dir
