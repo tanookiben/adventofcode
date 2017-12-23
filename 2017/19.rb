@@ -2,7 +2,7 @@ def move(map, x, y, dir)
   curr = map[y][x]
 
   # Please don't judge me
-  
+
   case curr
   when '|'
     case dir
@@ -36,7 +36,7 @@ def move(map, x, y, dir)
     when :down, :up
       try_right = map[y][x+1]
       try_left = map[y][x-1]
-      case 
+      case
       when try_right == '-' || try_right == '+' || try_right =~ /[A-Z]/
         return try_right, x+1, y, :right
       when try_left == '-' || try_left == '+' || try_left =~ /[A-Z]/
